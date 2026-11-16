@@ -1,4 +1,4 @@
-**Version 1.0.** Effective November 9, 2026.
+**Version 1.1.** Effective November 16, 2026.
 
 **The short version: your workout, body and health information stays on your phone. We don't collect it, sell it, share it or use it for ads. We can't see it.**
 
