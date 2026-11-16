@@ -1,4 +1,4 @@
-**Version 1.0.** Effective November 9, 2026. This policy is written for the Washington My Health My Data Act, Nevada SB 370 and Connecticut's consumer health data rules, and we apply it to everyone who uses Strata.
+**Version 1.1.** Effective November 16, 2026. This policy is written for the Washington My Health My Data Act, Nevada SB 370 and Connecticut's consumer health data rules, and we apply it to everyone who uses Strata. Version 1.1 adds the body weight you enter, the profile details you can choose to add, and the strength comparison.
 
 ## 1. Consumer health data the app processes
 
@@ -6,9 +6,10 @@
 | --- | --- | --- |
 | Health data you allow from the Apple Health app | Sleep, heart rate variability, resting heart rate, steps, workouts, weight | Your daily readiness estimate and Coach's call |
 | Daily check-ins | How you feel (Great, Good, Sore, Stressed, Drained) and any sleep hours you type. Sleep from the Apple Health app is read each time and not stored | Setting your day: full plan, lighter day or a walk |
-| Body measurements | When scan features are available: scan numbers from InBody, DEXA or a smart scale; a photo of the report you attach | Showing how your body composition changes |
+| Body measurements | Body weight you enter (in your profile or body information). When scan features are available: scan numbers from InBody, DEXA or a smart scale; a photo of the report you attach | Showing how your body changes, and comparing your squat, bench press and deadlift with published powerlifting results |
+| Profile details you choose to add | Sex and birth year, each optional | Choosing the comparison group for your squat, bench press and deadlift |
 | Training | Workouts, sets, effort, activities | Coaching, progress and recovery estimates |
-| Inferences | Readiness estimate, fatigued muscle groups, lighter-day suggestions | Adjusting your training |
+| Inferences | Readiness estimate, fatigued muscle groups, lighter-day suggestions, strength comparison band | Adjusting your training |
 
 ## 2. Sources
 

@@ -1,4 +1,4 @@
-**Version 1.1.** Effective November 16, 2026.
+**Version 1.1.** Effective November 16, 2026. Version 1.1 adds the profile details you can choose to add (Section 1), how the app uses your birth year (Section 6), and clearer wording about the strength comparison and sign-ups.
 
 **The short version: your workout, body and health information stays on your phone. We don't collect it, sell it, share it or use it for ads. We can't see it.**
 
@@ -11,8 +11,8 @@ The app stores and processes the following only on your phone, to give you the f
 | Information | Examples | Why |
 | --- | --- | --- |
 | Workouts you log | Exercises, sets, reps, weights, effort, notes, plans, goals | Logging, history, records, plans and Coach suggestions |
-| Body information you enter | Body weight and focus areas. When scan features are available: scan results (InBody, DEXA, scale) and scan photos you attach | Body map and Coach suggestions (scan comparisons, when available) |
-| Profile details you choose to add | Sex, birth year and body weight, in More › Profile & units. Each is optional, and you can pick "Rather not say" | Showing how your squat, bench press and deadlift compare with other lifters of your sex, age and body weight. The comparison is calculated on your phone |
+| Body information you enter | Body weight (the same body weight used in your profile) and focus areas. When scan features are available: scan results (InBody, DEXA, scale) and scan photos you attach | Body map and Coach suggestions (scan comparisons, when available) |
+| Profile details you choose to add | Sex, birth year and body weight, in More › Profile & units. Each is optional, and you can pick "Rather not say" | Showing how your squat, bench press and deadlift compare with published results from drug-tested powerlifting competitions for your sex and age, relative to your body weight. The comparison is calculated on your phone; nothing is sent to us or compared with other Strata members |
 | Health data you allow | From the Apple Health app: sleep, heart rate variability, resting heart rate, steps, workouts, weight. Read and shown each time they're needed; the app doesn't store these readings | Readiness score and the "what changed" summary |
 | Daily check-ins (if you turn them on) | How you feel (Great, Good, Sore, Stressed, Drained) and any sleep hours you type. Sleep from the Apple Health app is read each time and not stored | Coach's call for the day and lighter-day adjustments |
 | Activities you log | Runs, rides, classes, sports, walks: type, minutes, how hard | Calendar, weekly goal and leg recovery |
@@ -29,7 +29,7 @@ The app reads only the Apple Health app data types you allow, and you can turn e
 - **Feedback, votes and support emails:** If you send feedback, vote on features or email support, your email app sends us your email address, what you write, any screenshot you attach, the app version and build and the topic you picked (in the subject line), and your iPhone model. We use it only to reply and to improve the app, keep it in an inbox protected with two-step sign-in, and delete it within 24 months or sooner if you ask. Please don't include health details you'd rather keep private.
 - **Crash reports:** If you choose to share diagnostics with app developers in your phone's settings, Apple may send us anonymous crash reports. They don't include your workout or health data.
 - **Website:** Our website does not use advertising or tracking cookies.
-- **Website waitlist:** If you join the waitlist on stratastudios.app, we collect your email address and first name, to send you early access, launch and update emails. We don't ask about health, injuries or medical conditions. Every email has an unsubscribe link, and we remove you when you unsubscribe or ask. Our email service provider sends these emails for us under a contract that limits its use of your address to sending them. We keep your waitlist information until you unsubscribe or ask us to delete it. We don't sell or share the list.
+- **Waitlist and tester sign-ups:** If you sign up for our waitlist or to test the app (for example through our social media), we collect the email address and name you give us, to send you a test invitation and early access, launch and update emails. We don't ask about health, injuries or medical conditions. Every email has an unsubscribe link, and we remove you when you unsubscribe or ask. Our email service provider sends these emails for us under a contract that limits its use of your address to sending them. We keep your waitlist information until you unsubscribe or ask us to delete it. We don't sell or share the list.
 
 ## 3. What we never do
 
@@ -49,13 +49,13 @@ If information we are responsible for is ever accessed without authorization, we
 
 ## 6. Age
 
-The app is for adults 18 and older. Where the app store gives us an age signal (such as Apple's Declared Age Range), the app checks it during setup and again from time to time when it opens, uses it only to apply this rule, and keeps only the date of the last check and whether it passed, never your age or age range; if it says the account belongs to someone under 18, the app doesn't open and stores nothing else, and if under 13 it erases what it stored. Setup never asks for your birth date. If you choose to add your birth year in More › Profile & units, the app uses it only for the lift comparisons in Section 1. We don't knowingly collect information from children.
+The app is for adults 18 and older. Where the app store gives us an age signal (such as Apple's Declared Age Range), the app checks it during setup and again from time to time when it opens, uses it only to apply this rule, and keeps only the date of the last check and whether it passed; it never stores the age or age range the app store returns; if it says the account belongs to someone under 18, the app doesn't open and stores nothing else, and if under 13 it erases what it stored. Setup never asks for your birth date. Separately, if you choose to add your birth year in More › Profile & units, it stays on your phone and the app uses it for the lift comparisons in Section 1. We don't knowingly collect information from children.
 
 ## 7. Consumer Health Data Privacy Policy (Washington, Nevada and similar laws)
 
 Our [Consumer Health Data Privacy Policy](/strata/consumer-health-data) (stratastudios.app/strata/consumer-health-data) is a separate notice, linked on our website's home page, in the App Store listing and in the app (More › Help & feedback). In short:
 
-- **Categories:** workouts, body measurements (including scans, when available), and the Apple Health app data you allow (Section 1).
+- **Categories:** workouts, daily check-ins, body measurements and profile details, the Apple Health app data you allow, and estimates drawn from them (Section 1).
 - **Purpose:** to provide the features you request, on your device.
 - **Sources:** you, and the Apple Health app with your permission.
 - **Where it's processed:** only on your device. It is not sent to us and we can't see it. We still treat this as covered by these laws and apply our Consumer Health Data Privacy Policy to it.
@@ -73,3 +73,5 @@ If we change this policy in a material way, especially to collect anything new, 
 ## 10. Contact
 
 Strata Studios LLC · 2524 N Broadway, Ste 554 #108357, Edmond, OK 73034 · privacy@stratastudios.app
+
+The app is published on the App Store by Joshua Antonious, Strata Studios' Member, on the company's behalf, until it transfers to the company.
