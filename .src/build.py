@@ -55,7 +55,7 @@ def page(path, title, eyebrow, h1, body, desc):
 
 def md(name):
     text = open(os.path.join(SRC, name), encoding="utf-8").read()
-    out = markdown.markdown(text, extensions=["tables"], output_format="html5")
+    out = markdown.markdown(text, extensions=["tables", "toc"], output_format="html5")
     return out.replace("<table>", '<div class="tw"><table>').replace("</table>", "</table></div>")
 
 
