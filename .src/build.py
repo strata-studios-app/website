@@ -124,7 +124,7 @@ write(".well-known/security.txt", "Contact: mailto:security@stratastudios.app\nE
       "Policy: https://stratastudios.app/security\n")
 
 home_links = "".join(f'<li><a href="{u}">{html.escape(t)}</a></li>' for t, u in [
-    ("Strata support", "/strata/support"), ("Privacy Policy", "/strata/privacy"),
+    ("About Strata", "/strata/"), ("Strata support", "/strata/support"), ("Privacy Policy", "/strata/privacy"),
     ("Consumer Health Data Privacy Policy", "/strata/consumer-health-data"),
     ("Terms of Use", "/strata/terms")])
 home = f"""
@@ -134,9 +134,54 @@ home = f"""
 """
 write("index.html", page("/", "Strata Studios", "STRATA STUDIOS LLC", "Strata Studios", home,
                          "Strata Studios makes Strata, a strength-training app for iPhone."))
-write("strata/index.html", page("/strata/", "Strata", "STRATA", "Strata", home.replace(
-    "We make Strata, a strength-training app for iPhone.", "A strength-training app for iPhone, by Strata Studios."),
-    "Strata, a strength-training app for iPhone, by Strata Studios."))
+product = """
+<p class="lead">A strength-training app for iPhone. Log every set, follow a plan, and get coaching that changes when your plans do.</p>
+<p class="tag">Train with a purpose.</p>
+<p>Coming to the App Store on Tuesday, December 8, 2026.</p>
+<h2>What Strata does</h2>
+<ul>
+<li>Logs sets, reps and weight fast, with what you did last time beside every set.</li>
+<li>Builds a plan around your goal and the days you can train.</li>
+<li>Checks in before you train. Short on time or sore, Coach reshapes today's workout and tells you why.</li>
+<li>Shows the muscles you've trained this week on a body map.</li>
+<li>Travels with you. Pick a hotel gym or no equipment, and Strata swaps in exercises that train the same muscles.</li>
+<li>Keeps your rest timer on the Lock Screen.</li>
+<li>Explains how to do every exercise in the library.</li>
+<li>Reports your results at the end of every plan.</li>
+</ul>
+<h2>Your data stays yours</h2>
+<p>No account required. Your workouts, body and health information stay on your iPhone. We don't collect them and we can't see them. There are no ads. Export everything at any time, as a full backup or as a spreadsheet (CSV).</p>
+<h2>Works with the Apple Health app</h2>
+<p>Optional. With your permission, Strata reads sleep, heart rate variability, resting heart rate, steps, workouts and body weight from the Health app to shape Coach's call, and saves the workouts you finish to the Health app.</p>
+<h2>Price</h2>
+<p>14 days free. Then $39.99 a year for the first 1,000 yearly members, kept for as long as you renew, or $9.99 a month. After the first 1,000, the yearly price is $59.99. Apple handles billing, and you can cancel at any time in your iPhone settings.</p>
+<h2>Questions</h2>
+<h3>Do I need an account?</h3>
+<p>No. Strata works without an account, an email or a password.</p>
+<h3>Where is my data stored?</h3>
+<p>On your iPhone. Strata has no servers for your workout, body or health information.</p>
+<h3>How does Coach decide what to change?</h3>
+<p>Coach follows training rules that run on your iPhone. It looks at your check-in, your recent training and, if you allow it, your Health app data. Every call comes with the reason.</p>
+<h3>Can I train without a gym?</h3>
+<p>Yes. Choose no equipment or a travel gym when you start, and Strata adjusts the workout.</p>
+<h3>Is there a free version?</h3>
+<p>There's a 14-day free trial. After that, Strata is a paid membership.</p>
+<h3>Can I move to a new iPhone?</h3>
+<p>Yes. Your iPhone backup brings Strata with it, and you can restore from a Strata export file.</p>
+<h3>Is Strata on Android?</h3>
+<p>Not yet. Strata is for iPhone.</p>
+<h3>Who is Strata for?</h3>
+<p>Adults 18 and older who lift or want to start. Strata is fitness guidance, not medical advice.</p>
+<h2>Who makes Strata</h2>
+<p>Strata Studios LLC in Edmond, Oklahoma. Founded by Joshua Antonious. Questions go to <a href="mailto:hello@stratastudios.app">hello@stratastudios.app</a>; help with the app goes to <a href="/strata/support">Strata support</a>.</p>
+"""
+write("strata/index.html", page("/strata/", "Strata: strength-training app for iPhone", "STRATA", "Strata", product,
+    "Strata is a strength-training app for iPhone. No account required, your data stays on your phone, 14 days free. On the App Store December 8, 2026."))
+
+write("robots.txt", "User-agent: *\nAllow: /\n\nSitemap: https://stratastudios.app/sitemap.xml\n")
+urls = ["/", "/strata/", "/strata/support", "/strata/privacy", "/strata/consumer-health-data", "/strata/terms", "/security"]
+write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+      + "".join(f"<url><loc>https://stratastudios.app{u}</loc></url>\n" for u in urls) + "</urlset>\n")
 
 nf = '<p class="lead">That page isn\'t here.</p><p><a href="/">Go to the home page</a> or <a href="/strata/support">get support</a>.</p>'
 write("404.html", page("/404", "Page not found · Strata Studios", "STRATA STUDIOS · 404", "Page not found", nf,
